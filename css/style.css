@@ -17,6 +17,7 @@ header {
 .navbar-btn{
     color: #000000;
     position: absolute;
+    z-index: 100;
 }
 
 .navbar-btn:hover {
@@ -52,4 +53,5 @@ header {
 
 video {
   width: 100vw;
+  z-index: -1;
 }
