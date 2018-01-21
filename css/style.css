@@ -1,0 +1,50 @@
+html, body {
+  font-family: Georgia, serif;
+  color: #fff;
+}
+
+header {
+  background-color: #9acd32;
+  border-color: #9acd32;
+  padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.navbar-btn{
+    color: #000000;
+}
+
+.navbar-btn:hover {
+    color: #fff;
+    background-color: #9acd32;
+    border-color: #9acd32;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    margin-left: -250px;
+}
+
+#sidebar.active {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  margin-left: 0px;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #9ACD32;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #9ACD32;
+}
