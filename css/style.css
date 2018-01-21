@@ -16,6 +16,7 @@ header {
 
 .navbar-btn{
     color: #000000;
+    position: absolute;
 }
 
 .navbar-btn:hover {
@@ -47,4 +48,8 @@ header {
 #sidebar .sidebar-header {
     padding: 20px;
     background: #9ACD32;
+}
+
+video {
+  width: 100vw;
 }
