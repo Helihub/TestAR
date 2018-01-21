@@ -6,52 +6,56 @@ html, body {
 header {
   background-color: #9acd32;
   border-color: #9acd32;
-  padding: 20px;
+  padding: 5vh;
+
 }
 
 .wrapper {
-    display: flex;
-    align-items: stretch;
+  display: flex;
+  align-items: stretch;
 }
 
-.navbar-btn{
-    color: #000000;
-    position: absolute;
-    z-index: 100;
+.navbar-btn {
+  color: #000000;
+  position: absolute;
+  z-index: 1;
 }
 
 .navbar-btn:hover {
-    color: #fff;
-    background-color: #9acd32;
-    border-color: #9acd32;
+  color: #fff;
+  background-color: #9acd32;
+  border-color: #9acd32;
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 100vh;
-    margin-left: -250px;
+  min-width: 15vw;
+  max-width: 15vw;
+  min-height: 80vh;
+  max-height: 80vh;
+  margin-left: -15vw;
 }
 
 #sidebar.active {
-  min-width: 250px;
-  max-width: 250px;
-  min-height: 100vh;
-  margin-left: 0px;
+  min-width: 15vw;
+  max-width: 15vw;
+  min-height: 80vh;
+  max-height: 80vh;
+  margin-left: 0vw;
 }
 
 #sidebar {
-    /* don't forget to add all the previously mentioned styles here too */
-    background: #9ACD32;
-    transition: all 0.3s;
+  background: #9ACD32;
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #9ACD32;
+  padding: 20px;
+  background: #9ACD32;
 }
 
 video {
-  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 80vh;
+  max-height: 80vh;
   z-index: -1;
 }
