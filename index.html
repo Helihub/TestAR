@@ -30,6 +30,32 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
         </button>
 
+        <!-- HTML5 video to play/stream the camera recording. -->
+<video autoplay> </video>
+
+<script>
+	// Reference to video element.
+  	var video = document.querySelector('video');
+
+	var errorCallback = function(e) {
+		// User rejected camera request. Handle appropriately.
+	};
+
+	// Ensure cross-browser functionality.
+	navigator.getUserMedia  = navigator.getUserMedia ||
+							  navigator.webkitGetUserMedia ||
+							  navigator.mozGetUserMedia ||
+							  navigator.msGetUserMedia;
+
+	if (navigator.getUserMedia) {
+		navigator.getUserMedia({audio: true, video: true}, function(stream) {
+			video.src = window.URL.createObjectURL(stream);
+		}, errorCallback);
+	} else {
+	  video.src = 'somevideo.webm'; // fallback.
+	}
+</script>
+
 
       </div>
 
